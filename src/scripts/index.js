@@ -38,10 +38,11 @@ function validateEmptyInput(username){
 
 
 
-async function getUserData(username) {
+async function getUserData(username="ulissesmarciano") {
 
     const userResponse = await getUser(username)
-
+    console.log(userResponse);
+    
     if (userResponse.message === "Not Found") {
         return screen.renderNotFound()
     }
@@ -51,12 +52,9 @@ async function getUserData(username) {
     user.setRepositories(repositoriesResponse)
 
     screen.renderUser(user)
-    
-
-    // getUser(username).then(userData => {
-
-   
 }
+
+getUserData()
 
 
 
