@@ -7,7 +7,7 @@ const user = {
     following: '',
     followers: '',
     events: [],
-    setInfo(gitHubUser){
+    setInfo(gitHubUser) {
         this.avatarUrl = gitHubUser.avatar_url
         this.name = gitHubUser.name
         this.bio = gitHubUser.bio
@@ -16,15 +16,14 @@ const user = {
         this.followers = gitHubUser.followers
     },
 
-    setRepositories(gitHubRepositories){
+    setRepositories(gitHubRepositories) {
         this.repositories = gitHubRepositories
     },
 
-    setEvents(gitHubEvents){
-        //this.events.payload.commits[0].message = gitHubEvents.name
+    setEvents(gitHubEvents) {
         this.events = gitHubEvents
     }
-    
+
 
 }
 
