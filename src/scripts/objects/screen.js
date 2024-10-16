@@ -30,13 +30,9 @@ const screen = {
             </div>`
         }
 
-        let eventListFiltered = user.events.filter(
-            event => event.type === "PushEvent" || event.type === "CreateEvent"
-        )
-        let eventList = eventListFiltered.splice(0, 10)
-        let events = ''
+        let eventsItens = ''
 
-        eventList.forEach(event => {
+        user.events.forEach(event => {
             let eventRepoName = ''
             let eventCommit = ''
             if (event.type === "PushEvent") {
@@ -48,12 +44,12 @@ const screen = {
                 eventCommit = "Não possui commits"
             } else return
 
-            events += `<li><a href="https://github.com/${eventRepoName}" target="_blank">${eventRepoName}</a> - ${eventCommit}</li>`
+            eventsItens += `<li><a href="https://github.com/${eventRepoName}" target="_blank">${eventRepoName}</a> - ${eventCommit}</li>`
         })
 
         this.userProfile.innerHTML += `<div class="events">
                                         <h2>Eventos</h2>
-                                        <ul>${events}</ul>
+                                        <ul>${eventsItens}</ul>
                                       </div>`
 
     },

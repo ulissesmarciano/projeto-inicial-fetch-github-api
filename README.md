@@ -52,4 +52,4 @@ Utilizando a Extensão Live Server pressione Alt+L+O
 
 - [x] Colocar verificações de coalessencia faltantes no repositorio renderizado.
 - [x] Coreção na identação do código.
-- [x] Adicionando melhorias na lógica
+- [x] Trocando a lógica de filtragem 'Push' e 'Create' para o service events. Obs. A lógica estava aplicada no screen.
