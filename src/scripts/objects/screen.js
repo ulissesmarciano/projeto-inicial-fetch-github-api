@@ -12,16 +12,16 @@ const screen = {
 
 
         let repositorieItens = ''
-        user.repositories.forEach(repo => repositorieItens += `<li>
-                                                                <a href="${repo.html_url}" target="_blank">${repo.name}
-                                                                    <div class="languages">
-                                                                        <p class="item">🍴 ${repo.forks || "Sem forks"}</p>
-                                                                        <p class="item">⭐ ${repo.stargazers_count || "Sem estrelas"}</p>
-                                                                        <p class="item">👀${repo.watchers || "Sem vizualizações"}</p>
-                                                                        <p class="item">👨‍💻${repo.language ?? "Não possui linguagem"}</p>
-                                                                    </div>
-                                                                </a>
-                                                              </li>`)
+        user.repositories.forEach(repo => repositorieItens +=   `<li>
+                                                                    <a href="${repo.html_url}" target="_blank">${repo.name}
+                                                                        <div class="languages">
+                                                                            <p class="item">🍴 ${repo.forks || "Sem forks"}</p>
+                                                                            <p class="item">⭐ ${repo.stargazers_count || "Sem estrelas"}</p>
+                                                                            <p class="item">👀${repo.watchers || "Sem vizualizações"}</p>
+                                                                            <p class="item">👨‍💻${repo.language ?? "Não possui linguagem"}</p>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>`)
 
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `<div class="repositories section">

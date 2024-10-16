@@ -51,5 +51,5 @@ Utilizando a Extensão Live Server pressione Alt+L+O
 #Correções
 
 - [x] Colocar verificações de coalessencia faltantes no repositorio renderizado.
-- [x] Criação de objetos para armazenar seus tipos.
+- [x] Coreção na identação do código.
 - [x] Adicionando melhorias na lógica
