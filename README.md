@@ -50,6 +50,6 @@ Utilizando a Extensão Live Server pressione Alt+L+O
 
 #Correções
 
-- [x] Requisição geral da api com um baseURL
+- [x] Colocar verificações de coalessencia faltantes no repositorio renderizado.
 - [x] Criação de objetos para armazenar seus tipos.
 - [x] Adicionando melhorias na lógica
